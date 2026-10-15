@@ -1,0 +1,9 @@
+# Chei API
+api_key.txt
+.env
+
+# Date generate
+history.json
+sandbox_root/
+target/
+*.log

@@ -1,0 +1,211 @@
+{
+  "records": [
+    {
+      "run_id": "3c34f3c6",
+      "program": "python3",
+      "timestamp": "2026-05-15T12:34:53.449423713+00:00",
+      "result_summary": {
+        "success": false,
+        "peak_ram_mb": 29.53125,
+        "wall_time_sec": 0.523224942,
+        "exit_code": 1,
+        "killed_reason": null,
+        "anomaly_count": 0,
+        "anomalies": []
+      },
+      "ai_recommendation": {
+        "suggested_ram_mb": 384,
+        "suggested_cpu_time_sec": 5,
+        "suggested_disk_mb": 50,
+        "suggested_timeout_sec": 10,
+        "reasoning": "RAM usage low",
+        "severity": "low",
+        "action": "increase_resources"
+      },
+      "human_decision": "Accepted",
+      "effective_config": {
+        "ram_mb": 384,
+        "cpu_time_sec": 5,
+        "disk_mb": 50,
+        "max_processes": 10,
+        "allow_network": false,
+        "allow_file_write": false,
+        "timeout_sec": 10
+      }
+    },
+    {
+      "run_id": "53a9a221",
+      "program": "python3",
+      "timestamp": "2026-05-15T12:41:59.212937936+00:00",
+      "result_summary": {
+        "success": true,
+        "peak_ram_mb": 20.9375,
+        "wall_time_sec": 0.540709768,
+        "exit_code": 0,
+        "killed_reason": null,
+        "anomaly_count": 0,
+        "anomalies": []
+      },
+      "ai_recommendation": {
+        "suggested_ram_mb": 384,
+        "suggested_cpu_time_sec": 2,
+        "suggested_disk_mb": 50,
+        "suggested_timeout_sec": 7,
+        "reasoning": "CPU usage 11%, tightened to 2s",
+        "severity": "medium",
+        "action": "decrease_resources"
+      },
+      "human_decision": "Accepted",
+      "effective_config": {
+        "ram_mb": 384,
+        "cpu_time_sec": 2,
+        "disk_mb": 50,
+        "max_processes": 10,
+        "allow_network": false,
+        "allow_file_write": false,
+        "timeout_sec": 7
+      }
+    },
+    {
+      "run_id": "c7d9ef1d",
+      "program": "python3",
+      "timestamp": "2026-05-15T12:44:58.401839661+00:00",
+      "result_summary": {
+        "success": true,
+        "peak_ram_mb": 162.1875,
+        "wall_time_sec": 0.36878341,
+        "exit_code": 0,
+        "killed_reason": null,
+        "anomaly_count": 0,
+        "anomalies": []
+      },
+      "ai_recommendation": {
+        "suggested_ram_mb": 384,
+        "suggested_cpu_time_sec": 1,
+        "suggested_disk_mb": 50,
+        "suggested_timeout_sec": 6,
+        "reasoning": "CPU usage low, tightening limit",
+        "severity": "low",
+        "action": "decrease_resources"
+      },
+      "human_decision": {
+        "ModifiedAndAccepted": {
+          "new_config": {
+            "ram_mb": 512,
+            "cpu_time_sec": 1,
+            "disk_mb": 50,
+            "max_processes": 10,
+            "allow_network": true,
+            "allow_file_write": false,
+            "timeout_sec": 6
+          }
+        }
+      },
+      "effective_config": {
+        "ram_mb": 512,
+        "cpu_time_sec": 1,
+        "disk_mb": 50,
+        "max_processes": 10,
+        "allow_network": true,
+        "allow_file_write": false,
+        "timeout_sec": 6
+      }
+    },
+    {
+      "run_id": "96c4315d",
+      "program": "python3",
+      "timestamp": "2026-05-15T12:45:39.450620174+00:00",
+      "result_summary": {
+        "success": true,
+        "peak_ram_mb": 162.1875,
+        "wall_time_sec": 0.408553576,
+        "exit_code": 0,
+        "killed_reason": null,
+        "anomaly_count": 0,
+        "anomalies": []
+      },
+      "ai_recommendation": {
+        "suggested_ram_mb": 384,
+        "suggested_cpu_time_sec": 1,
+        "suggested_disk_mb": 50,
+        "suggested_timeout_sec": 6,
+        "reasoning": "RAM usage within limits",
+        "severity": "low",
+        "action": "keep_current"
+      },
+      "human_decision": {
+        "ModifiedAndAccepted": {
+          "new_config": {
+            "ram_mb": 512,
+            "cpu_time_sec": 1,
+            "disk_mb": 50,
+            "max_processes": 10,
+            "allow_network": false,
+            "allow_file_write": false,
+            "timeout_sec": 6
+          }
+        }
+      },
+      "effective_config": {
+        "ram_mb": 512,
+        "cpu_time_sec": 1,
+        "disk_mb": 50,
+        "max_processes": 10,
+        "allow_network": false,
+        "allow_file_write": false,
+        "timeout_sec": 6
+      }
+    }
+  ],
+  "learning": {
+    "python3": {
+      "ram_correction_count": 2,
+      "ram_correction_avg_delta": 128.0,
+      "cpu_correction_count": 2,
+      "cpu_correction_avg_delta": 0.0,
+      "accept_count": 2,
+      "reject_count": 0,
+      "modify_count": 2,
+      "avg_successful_ram_mb": 115.10416666666667,
+      "successful_run_count": 3,
+      "preferred_configs": [
+        {
+          "ram_mb": 512,
+          "cpu_time_sec": 1,
+          "disk_mb": 50,
+          "max_processes": 10,
+          "allow_network": false,
+          "allow_file_write": false,
+          "timeout_sec": 6
+        },
+        {
+          "ram_mb": 512,
+          "cpu_time_sec": 1,
+          "disk_mb": 50,
+          "max_processes": 10,
+          "allow_network": true,
+          "allow_file_write": false,
+          "timeout_sec": 6
+        },
+        {
+          "ram_mb": 384,
+          "cpu_time_sec": 2,
+          "disk_mb": 50,
+          "max_processes": 10,
+          "allow_network": false,
+          "allow_file_write": false,
+          "timeout_sec": 7
+        },
+        {
+          "ram_mb": 384,
+          "cpu_time_sec": 5,
+          "disk_mb": 50,
+          "max_processes": 10,
+          "allow_network": false,
+          "allow_file_write": false,
+          "timeout_sec": 10
+        }
+      ]
+    }
+  }
+}
